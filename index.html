@@ -55,7 +55,7 @@
     </style>
 </head>
 <body>
-<!--  ----------------------------------------------------------------------  -->
+ <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
@@ -70,7 +70,7 @@
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgL000000ctxz" method="POST">
 
 <input type=hidden name="oid" value="00DgL000000ctxz">
-<input type=hidden name="retURL" value="https://optinmonster.com/wp-content/uploads/2016/10/Anatomy-of-the-Perfect-Thank-You-Page.png">
+<input type=hidden name="retURL" value="http://">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -84,11 +84,7 @@
 
 <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
 <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
 
 <label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="AF">AF</option>
 <option value="AX">AX</option>
@@ -327,12 +323,52 @@
 <option value="ZW">ZW</option>
 </select><br>
 
-<label for="state_code">State/Province</label><select  id="state_code" name="state_code"><option value="">--None--</option></select><br>
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="Campaign_ID">Campaign</label><select  id="Campaign_ID" name="Campaign_ID"><option value="">--None--</option><option value="701gL000000sx3J">GC Product Webinar - Jan 7, 2002</option>
-<option value="701gL000000sx3K">User Conference - Jun 17-19, 2002</option>
-<option value="701gL000000sx3L">DM Campaign to Top Customers - Nov 12-23, 2001</option>
-<option value="701gL000000sx3M">International Electrical Engineers Association Trade Show - Mar 4-5, 2002</option>
+<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+
+<label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
+
+<label for="industry">Industry</label><select  id="industry" name="industry"><option value="">--None--</option><option value="Agriculture">Agriculture</option>
+<option value="Apparel">Apparel</option>
+<option value="Banking">Banking</option>
+<option value="Biotechnology">Biotechnology</option>
+<option value="Chemicals">Chemicals</option>
+<option value="Communications">Communications</option>
+<option value="Construction">Construction</option>
+<option value="Consulting">Consulting</option>
+<option value="Education">Education</option>
+<option value="Electronics">Electronics</option>
+<option value="Energy">Energy</option>
+<option value="Engineering">Engineering</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Environmental">Environmental</option>
+<option value="Finance">Finance</option>
+<option value="Food &amp; Beverage">Food &amp; Beverage</option>
+<option value="Government">Government</option>
+<option value="Healthcare">Healthcare</option>
+<option value="Hospitality">Hospitality</option>
+<option value="Insurance">Insurance</option>
+<option value="Machinery">Machinery</option>
+<option value="Manufacturing">Manufacturing</option>
+<option value="Media">Media</option>
+<option value="Not For Profit">Not For Profit</option>
+<option value="Recreation">Recreation</option>
+<option value="Retail">Retail</option>
+<option value="Shipping">Shipping</option>
+<option value="Technology">Technology</option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="Transportation">Transportation</option>
+<option value="Utilities">Utilities</option>
+<option value="Other">Other</option>
+</select><br>
+
+Number of Employees:<select  id="00NgL00000NC8PZ" name="00NgL00000NC8PZ" title="Number of Employees"><option value="">--None--</option><option value="0-249">0-249</option>
+<option value="250-499">250-499</option>
+<option value="500-999">500-999</option>
+<option value="1,000-4,999">1,000-4,999</option>
+<option value="5,000-9,999">5,000-9,999</option>
+<option value="10,000+">10,000+</option>
 </select><br>
 
 <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Web">Web</option>
@@ -341,6 +377,12 @@
 <option value="Purchased List">Purchased List</option>
 <option value="Other">Other</option>
 <option value="Partner">Partner</option>
+</select><br>
+
+<label for="Campaign_ID">Campaign</label><select  id="Campaign_ID" name="Campaign_ID"><option value="">--None--</option><option value="701gL000000sx3J">GC Product Webinar - Jan 7, 2002</option>
+<option value="701gL000000sx3K">User Conference - Jun 17-19, 2002</option>
+<option value="701gL000000sx3L">DM Campaign to Top Customers - Nov 12-23, 2001</option>
+<option value="701gL000000sx3M">International Electrical Engineers Association Trade Show - Mar 4-5, 2002</option>
 </select><br>
 
 <input type="submit" name="submit">
