@@ -80,13 +80,15 @@
 <!--  value="yonatan.oren@i-cloudius.com">                                    -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required /><br>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
 
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" required /><br>
 
-<label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="AF">Afghanistan</option>
+<label for="country_code">Country</label><select  id="country_code" name="country_code" required>
+<option value="">--None--</option>
+<option value="AF">Afghanistan </option>
 <option value="AX">Aland Islands</option>
 <option value="AL">Albania</option>
 <option value="DZ">Algeria</option>
@@ -329,9 +331,9 @@
 </select><br>
 
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required/><br>
 
-<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+<label for="mobile">Mobile</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" required/><br>
 
 <label for="title">Title</label><input  id="title" maxlength="40" name="title" size="20" type="text" /><br>
 
@@ -377,19 +379,12 @@ Number of Employees:<select  id="00NgL00000NC8PZ" name="00NgL00000NC8PZ" title="
 <option value="10,000+">10,000+</option>
 </select><br>
 
-<label for="Campaign_ID">Campaign</label><select  id="Campaign_ID" name="Campaign_ID"><option value="">--None--</option><option value="701gL000000sx3J">GC Product Webinar - Jan 7, 2002</option>
-<option value="701gL000000sx3K">User Conference - Jun 17-19, 2002</option>
-<option value="701gL000000sx3L">DM Campaign to Top Customers - Nov 12-23, 2001</option>
-<option value="701gL000000sx3M">International Electrical Engineers Association Trade Show - Mar 4-5, 2002</option>
-</select><br>
+<!-- Hidden field for Campaign -->
+<input type="hidden" name="Campaign_ID" value="701gL000000sx3L">
 
-<label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Web">Web</option>
-<option value="Phone Inquiry">Phone Inquiry</option>
-<option value="Partner Referral">Partner Referral</option>
-<option value="Purchased List">Purchased List</option>
-<option value="Other">Other</option>
-<option value="Partner">Partner</option>
-</select><br>
+<!-- Hidden field for Lead Source -->
+<input type="hidden" name="lead_source" value="Web">
+
 
 <input type="submit" name="submit">
 
